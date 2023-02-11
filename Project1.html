@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            display: block;
+        }
+body{
+    margin: 60px 35px;
+    padding: 45px;
+    outline-color: black;
+    outline-width: 10px;
+    outline-style: solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #eddde0;
+}
+h1{
+    line-height: 30px;
+    margin: 50;
+    padding: 20px;
+    text-align: center; 
+    background-color:#E8C4C6;
+    color: #a0829a;
+
+}
+h2{ 
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: underline overline;
+}  
+
+h3{
+margin: 0 auto;
+text-align: center;
+font-weight: lighter;
+font-size: 20px;
+}
+
+p{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+.intro{
+    text-align: center;
+}
+.Eucalyptus{
+margin: 0 auto;
+text-align: center;
+color: #146e2c;
+}
+.Lavender{
+text-align: center;
+margin: 0 auto;
+color: rgb(197, 79, 179)
+}
+.Citrus{
+margin: 0 auto;
+text-align: center;
+color: #87ae48;
+}
+.Cinnamon{
+margin: 0 auto;
+text-align: center;
+color:  #ba5e12;
+}
+.Rose{
+margin: 0 auto;
+text-align: center;
+color:  #c94e77;
+}
+.thelink{
+  color: #b45579;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button {
+        display: block;
+        margin: 40px auto;
+        border: 1px solid #060606;
+        background: #b45579;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 20px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: rgb(252, 131, 211);
+        color: #0b0a0b;
+        border: 1px solid #1a64d6;
+      }
+    </style>
+</head>
+<body>
+  <h1> The Scented wix </h1>
+  <br>
+  <p><div class="intro"></div>
+    Welcome to our candle store, where we offer a curated collection of premium quality candles to enhance the ambiance of any space. From rich, earthy scents to delicate floral fragrances, we have something for every taste and occasion. 
+    Each candle is hand-poured with love and care, using only the finest ingredients to ensure a long-lasting burn and beautiful aroma. 
+    Whether you're looking for the perfect gift, or simply want to treat yourself to a little bit of luxury, we're here to help you find the perfect candle to suit your needs.</p>
+     <br>
+     <h2>Our products</h2>
+     <br>
+     <h3>
+   <span class="Eucalyptus"><strong>⁂Eucalyptus escape⁂</strong></span> 
+    <div> A refreshing blend of eucalyptus and mint,
+         perfect for creating a spa-like atmosphere in your home.</div>
+    <br>
+    <span class="Lavender" ><strong>⁂Lavender dreams⁂</strong></span>
+    <div>A calming scent of lavender and vanilla, perfect for winding down after a long day</div>
+    <br>
+    <span class="Citrus"><strong>⁂Citrus sorbet⁂</strong></span>
+    <div>A bright and cheerful mix of lemon and orange, perfect for adding a touch of sunshine to any room.</div>
+    <br>
+    <span class="Cinnamon"><strong>⁂Cinnamon spice⁂</strong></span>
+    <div>A warm and cozy blend of cinnamon and clove, perfect for creating a cozy and inviting atmosphere during the colder months.</div>
+    <br>
+    <span class="Rose"><strong>⁂Rose garden⁂</strong></span>
+    <div>A delicate and romantic scent of roses, perfect for creating a relaxing and peaceful environment.</div>
+    </h3>
+    <br>
+    <p>
+    <img src="https://i.etsystatic.com/27554442/r/il/167420/3085820212/il_1080xN.3085820212_9bdn.jpg" width ="320px"   alt="photo">
+  </p>
+  <br>
+  <p> <span class="thelink"></span> 
+    <a href="file:///C:/Users/Emily/.vscode/Project1.html" target="_blank"><em>our collection</em></a> </p>
+<br>
+<button>More info</button>
+  <hr>
+</body>
+<script>
+    function feedback (){
+        let name = prompt ("What is your name?")
+        let email = prompt("what is your email address?")
+        let country = prompt("what country do you live in?")
+
+        if (country == "South Africa" || country === "SA"){
+            alert ( "Hey," + name + ". We will keep in touch!")
+        }
+        else{
+            alert ("sorry," + name + ". We are unavailable in your region.")
+        }
+    }
+    let contactButton = document.querySelector("button");
+
+        contactButton.addEventListener("click" , feedback)
+</script>
+</html>
